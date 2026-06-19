@@ -1,0 +1,48 @@
+{
+  "model": "lnR = W*uni + (1-W)*de + bumps (PyTorch fit; see final-formula cell)",
+  "basis": [
+    "P:one",
+    "P:d",
+    "P:logC",
+    "F1:one",
+    "F1:d",
+    "F2:one",
+    "B2:one",
+    "V:one"
+  ],
+  "constants": {
+    "P:one": 0.010956775997952495,
+    "P:d": -0.13827721841977367,
+    "P:logC": 0.6509678678742055,
+    "F1:one": -0.9479798574482151,
+    "F1:d": 0.008299444660287413,
+    "F2:one": -0.3383222456197233,
+    "B2:one": 0.054629434144151216,
+    "V:one": 0.07569550751325294
+  },
+  "blend": {
+    "zeta_star": 0.6,
+    "q_sw": 9.0
+  },
+  "bump_shapes": {
+    "B2": {
+      "mu": -0.45,
+      "sigma": 0.5
+    }
+  },
+  "accuracy_pct": {
+    "train": {
+      "worst": 2.1707664382680227,
+      "mean": 0.22944394328248205,
+      "deep_plateau": 0.19960121310306764
+    },
+    "verify": {
+      "worst": 2.1487040083938265,
+      "mean": 0.23512999420861516,
+      "deep_plateau": 0.1781773025435828
+    }
+  },
+  "split_seed": 1234,
+  "cap_factor": 1.05,
+  "deep_cap": 0.002
+}
